@@ -40,5 +40,6 @@
   <%= @job.salary %>
 </p>
 
+<%= link_to 'Apply Now', new_application_path(@job) %>
 <%= link_to 'Edit', edit_job_path(@job) %> |
 <%= link_to 'Back', jobs_path %>
