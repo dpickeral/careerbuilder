@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151124000221) do
+ActiveRecord::Schema.define(version: 20151124001214) do
+
+  create_table "applications", force: :cascade do |t|
+    t.string   "email"
+    t.text     "resume"
+    t.integer  "job_id"
+    t.string   "firstname"
+    t.string   "lastname"
+    t.text     "coverletter"
+    t.boolean  "opt_in"
+    t.string   "address"
+    t.integer  "user_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+  end
 
   create_table "friendly_id_slugs", force: :cascade do |t|
     t.string   "slug",                      null: false
@@ -37,6 +51,7 @@ ActiveRecord::Schema.define(version: 20151124000221) do
     t.float    "salary"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+    t.integer  "user_id"
   end
 
   create_table "users", force: :cascade do |t|
