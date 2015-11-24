@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  location: MyString
+  description: MyText
+  active: false
+  applypath: MyString
+  requirements: MyText
+  worktype: MyString
+  salary: 1.5
+
+two:
+  title: MyString
+  location: MyString
+  description: MyText
+  active: false
+  applypath: MyString
+  requirements: MyText
+  worktype: MyString
+  salary: 1.5
